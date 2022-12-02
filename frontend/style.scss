@@ -1,0 +1,86 @@
+@use "sass:math";
+
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap";
+@import "vars";
+@import "src/components/ChatBox";
+@import "src/components/Player";
+@import "src/pages/LobbyPage";
+@import "src/components/Dashboard";
+@import "src/components/Message";
+@import "src/components/Button";
+@import "src/components/MapObject";
+@import "src/pages/GamePage";
+@import "src/pages/InitialPage";
+@import "src/components/GameWindow";
+@import "src/components/Helper";
+
+@media (min-width: 700px) {
+  $pixel-size: 4px;
+}
+
+@media (min-width: 1000px) {
+  $pixel-size: 4px;
+}
+
+html {
+  background: url(./sprites/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.SmallTitle {
+  font-size: x-large;
+  color: white;
+  margin-left: 5px;
+  font-family: "Rubik Distressed", cursive;
+}
+
+.TitleWrapper {
+  position: absolute;
+  width: 100%;
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  .Title {
+    font-size: larger;
+    font-family: "Rubik Distressed", cursive;
+    color: white;
+  }
+
+  .TitleAnimation {
+    animation-name: TitleAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes TitleAnimation {
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1.3) rotate(-10deg);
+  }
+}
+
+.Player {
+  position: absolute;
+  min-width: #{$GAME_WIDTH} / 13;
+  width: #{$GAME_WIDTH} / 13;
+  min-height: #{$GAME_HEIGHT} / 11;
+  height: #{$GAME_HEIGHT} / 11;
+  border-radius: 2px;
+}
+
+.pixelart {
+  image-rendering: pixelated;
+}

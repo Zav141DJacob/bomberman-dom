@@ -1,0 +1,27 @@
+@import "../../../vars";
+
+#GamePage {
+  position: relative;
+  min-width: 1100px;
+}
+
+.GameMiddle {
+  position: absolute;
+  top: calc(50% - ($GAME_HEIGHT / 2));
+  left: calc(50% - ($GAME_WIDTH / 2));
+}
+
+.MainGame {
+  display: flex;
+  flex-direction: row;
+}
+
+.ChatBoxFull {
+  position: absolute;
+}
+
+.dashboard {
+  position: relative;
+  padding-top: 15px;
+  left: calc(0% - ((($player_info_width + 20px + 10px) * 4) - $GAME_WIDTH) / 2 + 5px);
+}

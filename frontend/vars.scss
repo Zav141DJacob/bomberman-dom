@@ -1,0 +1,11 @@
+$GAME_WIDTH: 585px;
+$GAME_HEIGHT: 495px;
+$CHATBOX_HEIGHT: $GAME_HEIGHT;
+$CHATBOX_WIDTH: 250px;
+
+$pixel-size: 4px;
+$grid-cell: calc(#{$pixel-size} * 16);
+$bg: #9fa7e4;
+
+$ui-background: rgba(240, 248, 255, 0.2);
+$player_info_width: 200px;

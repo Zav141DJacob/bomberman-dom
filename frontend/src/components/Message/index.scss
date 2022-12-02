@@ -1,0 +1,25 @@
+.Message {
+  display: block;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
+
+  .Infobar {
+    background-color: black;
+    color: white;
+
+    .Username {
+      padding-inline: 0.2vw;
+    }
+
+    .Date {
+      background-color: grey;
+      padding-inline: 0.2vw;
+      float: right;
+    }
+  }
+
+  .ContentRow {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../../vars.scss";
+
+.helper {
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    width: $CHATBOX_WIDTH;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+    margin-left: 10px;
+    padding: 10px;
+}
+  
+.keys {
+    position: relative;
+    top: 10px;
+    display: grid;
+    left: 10px;
+    grid-template-columns: 15px 24px 24px 74px;
+    grid-template-rows: 24px 24px 30px;
+    width: 180px;
+    height: 95px;
+    grid-template-areas:
+        ". movementkey . ."
+        ". . up ."
+        ". left down right"
+        ". spacekey spacekey spacekey"
+        "space space space space";
+}
+
+.powerups {
+    position: relative;
+    top: 40px;
+}
+
+.keys > img {
+    width: 30px;
+    height: 30px;
+}
+
+.upKey {
+    grid-area: up;
+}
+.downKey {
+    grid-area: down;
+}
+
+.leftKey {
+    grid-area: left;
+}
+
+.rightKey {
+    grid-area: right;
+}
+
+.spaceKey {
+    grid-area: space;
+}
+
+.movementlabel {
+    grid-area: movementkey;
+}
+.spacelabel {
+    grid-area: spacekey;
+}
+  

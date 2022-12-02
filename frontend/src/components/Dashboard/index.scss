@@ -1,0 +1,57 @@
+@import "../../../vars";
+
+.deathIcon {
+  position: absolute;
+  height: 70px;
+  left: 65px;
+  top: 20px;
+  overflow: visible;
+  filter: opacity(0.6);
+
+  content: url("https://mfcfoundation.co.uk/wp-content/uploads/2017/06/RED-CROSS-300x300.png");
+}
+
+.dashboard {
+  // position: relative;
+  // left: 50%;
+  // transform: translate(-50%);
+
+  // 20px - playerInfo margin
+  // 10px playerInfo paddingLeft + paddingRight
+  width: calc(($player_info_width + 20px + 10px) * 4);
+  display: inline-block;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.playerInfo {
+  width: $player_info_width;
+  height: 240px;
+  margin: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 5px;
+  background-color: rgba(240, 248, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border: 1px double green;
+  text-align: left;
+  font-size: large;
+}
+
+.playerIcon {
+  position: relative;
+  top: 10px;
+  left: 85%;
+  transform: translate(-50%);
+  height: 200px;
+  width: 200px;
+}
+
+.playerStats {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}

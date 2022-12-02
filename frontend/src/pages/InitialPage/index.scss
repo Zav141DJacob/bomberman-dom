@@ -1,0 +1,38 @@
+@import "../../../vars";
+
+#InitialPage {
+  position: relative;
+  min-width: 800px;
+  min-height: 800px;
+}
+
+#InitialMiddle {
+  position: absolute;
+  display: flex;
+  vertical-align: middle;
+  top: 40%;
+  left: calc(50% - (#{$CHATBOX_WIDTH} - 10px) / 2);
+  flex-direction: column;
+  button {
+    font-size: xx-large;
+  }
+}
+
+#NamePrompt {
+  background-color: $ui-background;
+  width: calc(#{$CHATBOX_WIDTH} - 10px);
+  height: 40px;
+
+  // position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#GlobalChat {
+  position: absolute;
+  top: 20%;
+}
+

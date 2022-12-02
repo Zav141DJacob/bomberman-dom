@@ -1,0 +1,37 @@
+.Block,
+.Wall,
+.Bomb,
+.Explosion,
+.powerup_bomb,
+.powerup_flames,
+.powerup_speed {
+  position: absolute;
+  width: 45;
+  height: 45;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+.Block {
+  background-image: url(./sprites/block.png);
+}
+.Wall {
+  background-image: url(./sprites/wall.png);
+}
+.Bomb {
+  background-image: url(./sprites/bomb.png);
+}
+.Explosion {
+  background-image: url(./sprites/explosion.png);
+}
+.powerup_bomb {
+  background-image: url(./sprites/powerup_bomb.png);
+}
+.powerup_flames {
+  background-image: url(./sprites/powerup_flames.png);
+}
+.powerup_speed {
+  background-image: url(./sprites/powerup_speed.png);
+}

@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  backend:
+    container_name: backend
+    build: ./backend
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Estonia/Tallinn
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      args:
+        GIT_USER:
+        GIT_PASS:
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Estonia/Tallinn
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

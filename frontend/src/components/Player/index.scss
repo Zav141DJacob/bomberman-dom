@@ -1,0 +1,249 @@
+@import "../../../vars";
+
+.Player1 {
+  background-image: url(./sprites/player1.png);
+}
+.Player2 {
+  background-image: url(./sprites/player2.png);
+}
+.Player3 {
+  background-image: url(./sprites/player3.png);
+}
+.Player4 {
+  background-image: url(./sprites/player4.png);
+}
+
+.Character {
+  width: calc($grid-cell * 2);
+  height: calc($grid-cell * 2);
+  overflow: hidden;
+  position: absolute;
+  margin: 4em auto;
+  scale: 0.5;
+  translate: -42px -115px;
+}
+
+.Characterstand {
+  animation: 0;
+}
+
+.Characterdown {
+  animation: movedown 0.21s steps(4);
+}
+
+.Characterstanddown {
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(1);
+    position: absolute;
+    z-index: 100;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+  }
+  & > .Avatar {
+    animation: moveSpritesheet 0.41s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+  }
+  & > .Avatarstand {
+    animation: moveSpritesheet 0.41s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+  }
+}
+
+.Characterup {
+  animation: moveup 0.21s steps(4);
+
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -64);
+  }
+}
+
+.Characterstandup {
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -64);
+  }
+  & > .Avatar {
+    animation: moveSpritesheet 0.41s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -64);
+  }
+  & > .Avatarstand {
+    animation: moveSpritesheet 0.41s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -64);
+  }
+}
+
+.Characterright {
+  animation: moveright 0.21s steps(4);
+
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -32);
+  }
+}
+
+.Characterstandright {
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -32);
+  }
+  & > .Avatar {
+    animation: moveSpritesheet 0.41s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -32);
+  }
+  & > .Avatarstand {
+    animation: moveSpritesheet 0.41s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -32);
+  }
+}
+
+.Characterleft {
+  animation: moveleft 0.21s steps(4);
+
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -96);
+  }
+}
+
+.Characterstandleft {
+  & > .Character_spritesheet {
+    animation: moveSpritesheet 0.21s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -96);
+  }
+  & > .Avatar {
+    animation: moveSpritesheet 0.41s steps(4);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -96);
+  }
+  & > .Avatarstand {
+    animation: moveSpritesheet 0.41s steps(1);
+    position: absolute;
+    background-size: 100%;
+    width: calc($grid-cell * 8);
+    height: calc($grid-cell * 8);
+    background-position-y: calc(#{$pixel-size} * -96);
+  }
+}
+
+.Character_spritesheet {
+  animation: moveSpritesheet 0.21s steps(4);
+  position: absolute;
+  z-index: 100;
+  background-size: 100%;
+  width: calc($grid-cell * 8);
+  height: calc($grid-cell * 8);
+}
+
+.Characterstand_spritesheet {
+  animation: moveSpritesheet 0.21s steps(1);
+  position: absolute;
+  background-size: 100%;
+  width: calc($grid-cell * 8);
+  height: calc($grid-cell * 8);
+}
+
+.Character_shadow {
+  position: absolute;
+  width: calc($grid-cell * 2);
+  height: calc($grid-cell * 2);
+  left: 0;
+  top: 0;
+  background: url(./sprites/playerShadow.png) no-repeat no-repeat;
+  background-size: 100%;
+}
+
+@keyframes movedown {
+  from {
+    transform: translate(0px, -100px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveup {
+  from {
+    transform: translate(0px, 100px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveright {
+  from {
+    transform: translate(-100px, 0px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveleft {
+  from {
+    transform: translate(100px, 0px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveSpritesheet {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

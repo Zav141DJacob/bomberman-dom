@@ -1,0 +1,62 @@
+@import "../../../vars";
+
+#LobbyPage {
+  position: relative;
+  min-width: 1024px;
+  min-height: 800px;
+}
+
+.LobbyMiddle {
+  
+
+  // vertical-align: bottom;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: calc(20% + 14px);
+  left: calc(50% - $CHATBOX_WIDTH);
+
+  
+  
+}
+
+.UsersListBox {
+
+  
+  // position: absolute;
+  text-align: center;
+
+
+  width: calc($CHATBOX_WIDTH * 2);
+  height: $CHATBOX_HEIGHT;
+
+  background-color: $ui-background;
+  // background-color: transparent;
+  backdrop-filter: blur(5px);
+
+
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+
+  .UsersList div ol li h2 {
+    color: black;
+  }
+
+}
+
+#StartGameButton {
+  // position: absolute;
+  font-size: xx-large;
+  // bottom: 5px;    
+}
+
+#LobbyChat {
+  position: absolute;
+  top: 20%;
+}
