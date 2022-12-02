@@ -4,11 +4,11 @@
 
 - [pnpm](https://pnpm.io/installation)
 - [golang](https://go.dev/doc/install)
-- Access to [mini-framework](https://01.kood.tech/git/roosarula/mini-framework) and [bomberman-dom](https://01.kood.tech/git/AS/bomberman-dom) repos
+- Access to [mini-framework](https://01.kood.tech/git/roosarula/mini-framework) and [bomberman-dom](https://01.kood.tech/git/roosarula/bomberman-dom) repos
 
 ## Getting started
 
-1. `git clone https://01.kood.tech/git/AS/bomberman-dom`
+1. `git clone https://01.kood.tech/git/roosarula/bomberman-dom`
 
 ### Backend
 
