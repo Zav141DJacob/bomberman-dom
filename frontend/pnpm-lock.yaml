@@ -7,7 +7,7 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
-  mini-framework: 01.kood.tech/git/roosarula/mini-framework/6ffab073c4cc2ba8c5bea78f5c20ed9abbbd03a7
+  mini-framework: 01.kood.tech/git/roosarula/mini-framework/ada2e79cb46e47c676bc25316d628a9b5b4e9f5b
 
 devDependencies:
   '@parcel/transformer-sass': 2.8.0
@@ -477,7 +477,7 @@ packages:
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.8.0
       nullthrows: 1.1.1
-      terser: 5.16.0
+      terser: 5.16.1
     dev: true
 
   /@parcel/package-manager/2.8.0:
@@ -930,7 +930,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001435
+      caniuse-lite: 1.0.30001436
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -945,8 +945,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001435:
-    resolution: {integrity: sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==}
+  /caniuse-lite/1.0.30001436:
+    resolution: {integrity: sha512-ZmWkKsnC2ifEPoWUvSAIGyOYwT+keAaaWPHiQ9DfMqS1t6tfuyFYoWR78TeZtznkEQ64+vGXH9cZrElwR2Mrxg==}
     dev: true
 
   /chalk/2.4.2:
@@ -1651,8 +1651,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /terser/5.16.0:
-    resolution: {integrity: sha512-KjTV81QKStSfwbNiwlBXfcgMcOloyuRdb62/iLFPGBcVNF4EXjhdYBhYHmbJpiBrVxZhDvltE11j+LBQUxEEJg==}
+  /terser/5.16.1:
+    resolution: {integrity: sha512-xvQfyfA1ayT0qdK47zskQgRZeWLoOQ8JQ6mIgRGVNwZKdQMU+5FkCBjmv4QjcrTzyZquRw2FVtlJSRUmMKQslw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -1721,8 +1721,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  01.kood.tech/git/roosarula/mini-framework/6ffab073c4cc2ba8c5bea78f5c20ed9abbbd03a7:
-    resolution: {commit: 6ffab073c4cc2ba8c5bea78f5c20ed9abbbd03a7, repo: https://01.kood.tech/git/roosarula/mini-framework, type: git}
+  01.kood.tech/git/roosarula/mini-framework/ada2e79cb46e47c676bc25316d628a9b5b4e9f5b:
+    resolution: {commit: ada2e79cb46e47c676bc25316d628a9b5b4e9f5b, repo: https://01.kood.tech/git/roosarula/mini-framework, type: git}
     name: mini-framework
     version: 0.0.2
     dev: false
